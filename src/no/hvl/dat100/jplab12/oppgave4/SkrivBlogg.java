@@ -16,15 +16,9 @@ public class SkrivBlogg {
 		try {
 			
 			PrintWriter skriver = new PrintWriter(MAPPE + filnavn);
-			Innlegg[] b = samling.getSamling();
+			String output = samling.toString();
 			
-			skriver.println(samling.getAntall());
-			
-			for(int i = 0; i < samling.getAntall(); i++) {
-				
-				skriver.println(b[i].toString());
-				
-			}
+			skriver.print(output);
 			
 			skriver.close();
 			

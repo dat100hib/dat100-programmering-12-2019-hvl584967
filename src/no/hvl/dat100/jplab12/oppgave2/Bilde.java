@@ -37,7 +37,7 @@ public class Bilde extends Tekst {
 		
 		String txt;
 		txt = "BILDE\n" + getId() + "\n" + getBruker() + "\n"
-		+ getDato() + "\n" + getLikes() + "\n" + getTekst() + "\n" + getUrl();
+		+ getDato() + "\n" + getLikes() + "\n" + getTekst() + "\n" + getUrl() + "\n";
 		
 		return txt;
 

@@ -38,7 +38,7 @@ public class Tekst extends Innlegg {
 		
 		String txt;
 		txt = "TEKST\n" + getId() + "\n" + getBruker() + "\n" + getDato() +
-				"\n" + getLikes() + "\n" + getTekst();
+				"\n" + getLikes() + "\n" + getTekst() + "\n";
 		
 		return txt;
 
