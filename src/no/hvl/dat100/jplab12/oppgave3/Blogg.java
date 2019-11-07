@@ -85,15 +85,15 @@ public class Blogg {
 	
 	public boolean leggTil(Innlegg innlegg) {
 		
-		if(finnes(innlegg)) {
-			
-			return false;
-			
-		}else {
+		if(!finnes(innlegg) && ledigPlass()) {
 			
 			innleggtabell[nesteledig] = innlegg;
 			nesteledig ++;
 			return true;
+			
+		}else {
+			
+			return false;
 			
 		}
 
